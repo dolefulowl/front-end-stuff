@@ -1,0 +1,175 @@
+.intro {
+  position: relative;
+
+  margin-bottom: 6.5333rem;
+}
+
+.intro__label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  margin-bottom: 6.3333rem;
+
+  @include breakpoint($tablet) {
+    width: 37%;
+  }
+
+  @include breakpoint(820px) {
+    margin-bottom: 2.3333rem;
+  }
+
+  @include breakpoint($xl) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include breakpoint($md) {
+    margin-bottom: 4.5333rem;
+  }
+}
+
+.intro__title {
+  font-size: 2.93333rem;
+  line-height: 3.33333rem;
+  font-weight: 700;
+  color: $secondary;
+
+  margin-bottom: 1rem;
+
+  @include breakpoint(920px) {
+    font-size: 1.93333rem;
+    line-height: 2.33333rem;
+  }
+}
+
+.intro__subtitle {
+  width: 100%;
+  max-width: 31.2rem;
+
+  font-size: 1.2rem;
+  line-height: 1.4666rem;
+  color: $primary;
+
+  margin-bottom: 2rem;
+
+  @include breakpoint(920px) {
+    font-size: 1rem;
+    max-width: unset;
+  }
+}
+
+.intro__buttons {
+  margin-bottom: 4rem;
+}
+
+.intro__media {
+  display: flex;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+  }
+  @include breakpoint($xl) {
+    align-items: center;
+  }
+}
+
+.intro__media-video {
+  display: flex;
+  flex: 0 0 9.6rem;
+  align-items: center;
+  justify-content: center;
+  max-height: 5.3333rem;
+  max-width: 9.6rem;
+  width: 100%;
+  box-shadow: 0px -1px 8px #4f2d80;
+
+
+
+  border-radius: 0.26666rem;
+  background: #361C5D;
+
+  margin-right: 1.5rem;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 1rem;
+  }
+}
+
+.intro__media-icon {
+  cursor: pointer;
+}
+
+.intro__media-text {
+  flex: 1 1;
+}
+
+.intro__media-title {
+  font-size: 1.066rem;
+  color: $primary;
+  font-weight: 400;
+}
+
+.intro__media-link {
+  font-size: 0.9333rem;
+  line-height: 1.4666rem;
+  color: #6D6D78;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.intro-man {
+  position: absolute;
+  top: 0;
+  right: -3rem;
+
+  max-width: 723px;
+  @include breakpoint(1286px) {
+    max-width: 623px;
+  }
+  @include breakpoint(920px) {
+    right: -9rem;
+  }
+  @include breakpoint($xl) {
+    display: none;
+  }
+}
+
+.intro__featured {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 40%;
+
+  @include breakpoint(820px) {
+    margin-top: -2rem;
+  }
+
+  img {
+    @include breakpoint(820px) {
+      margin-top: 2rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+
+      @include breakpoint(1100px) {
+        margin-right: 2rem;
+      }
+
+      @include breakpoint($md) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.intro__btn {
+  @include breakpoint($phone) {
+    margin-bottom: 1rem;
+  }
+}
+

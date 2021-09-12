@@ -1,0 +1,49 @@
+.btn {
+  padding: 8px 27px;
+  border:  1px solid $orange;
+  border-radius: 4px;
+  background: none;
+
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+
+  transition: background-color .2s ease, box-shadow  .2s ease;
+
+  &:hover {
+    background: $orange;
+    color: #ffffff;
+
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+  }
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+    @include breakpoint($md) {
+      margin-right: .3rem;
+    }
+
+  }
+
+  &--wide {
+    padding: 13px 27px;
+  }
+
+  &--form {
+    border-radius: 0 4px 4px 0;
+  }
+
+  &--header {
+    @include breakpoint($xl) {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}

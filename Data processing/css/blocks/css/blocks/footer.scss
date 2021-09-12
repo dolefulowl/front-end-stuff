@@ -1,0 +1,39 @@
+.footer {
+  margin-bottom: 6.6666rem;
+
+  @include breakpoint(450px) {
+    margin-bottom: 2rem;
+  }
+
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(450px) {
+    flex-direction: column;
+  }
+}
+
+.footer__link {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.333rem;
+
+  color: #8D8D8D;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2.333rem;
+    @include breakpoint(450px) {
+      margin-right: 0;
+      margin-bottom: .5rem;
+    }
+  }
+}

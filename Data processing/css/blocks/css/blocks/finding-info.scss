@@ -1,0 +1,116 @@
+.finding-info {
+  margin-bottom: 14.93rem;
+}
+
+.finding-info__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint(890px) {
+    flex-direction: column;
+  }
+}
+
+.finding-info__image {
+  margin-right: 4rem;
+  position: relative;
+  @include breakpoint(890px) {
+    order: 1;
+    margin-right: 0;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    @include breakpoint(450px) {
+      display: none;
+    }
+  }
+
+  &:before {
+    width: 137px;
+    height: 67px;
+    top: -16px;
+    left: -29px;
+
+    background: url('../img/finding-info/finding-background-icon-1.png');
+
+  }
+  &:after {
+    width: 70px;
+    height: 67px;
+    top: 239px;
+    right: -45px;
+
+    background: url('../img/finding-info/finding-background-icon-2.png');
+  }
+}
+
+.finding-info__label {
+  width: 100%;
+  max-width: 32rem;
+
+  @include breakpoint(890px) {
+    order: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+.finding-info__label-title {
+  font-size: 1.7333rem;
+  line-height: 2rem;
+  letter-spacing: 0.021rem;
+  color: $secondary;
+
+  margin-bottom: 2rem;
+}
+
+.finding-info__label-subtitle {
+  font-size: 1rem;
+  line-height: 1.333rem;
+  letter-spacing: 0.013rem;
+  color: $primary;
+
+  margin-bottom: 3.2rem;
+}
+
+.finding-info__label-items {
+  display: flex;
+}
+
+.finding-info__label-item {
+  &:not(:last-child) {
+    margin-right: 4.266rem;
+    @include breakpoint($md) {
+      margin-right: 2.266rem;
+    }
+  }
+
+}
+
+.finding-info__label-item-icon {
+  margin-bottom: 1.6666rem;
+}
+
+.finding-info__label-item-title {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.013rem;
+  font-weight: 600;
+  color: $secondary;
+
+  margin-bottom: 0.58rem;
+}
+
+.finding-info__label-item-subtitle {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.013rem;
+  font-weight: 500;
+  font-family: 'Gilroy-SemiBoldS';
+  color: $primary;
+}
