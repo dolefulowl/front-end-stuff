@@ -1,0 +1,14 @@
+.show {
+  display: flex !important;
+}
+
+.fixed {
+  position: fixed !important;
+  background-color: $primary;
+}
+
+.hide-br {
+  @include breakpoint($mid) {
+    display: none;
+  }
+}

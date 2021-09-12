@@ -1,0 +1,58 @@
+.footer {
+  background-color: $primary;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.4rem 0;
+
+  @include breakpoint($lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint($phone) {
+    padding: 1.733rem 0;
+  }
+}
+
+.footer__left {
+  text-align: center;
+  @include breakpoint($phone) {
+    margin-bottom: .4rem;
+    font-size: 1rem;
+  }
+}
+
+.footer__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+
+  align-items: center;
+  @include breakpoint($phone) {
+    flex-direction: column;
+  }
+}
+
+.footer__links {
+  display: flex;
+  @include breakpoint($phone) {
+    margin-bottom: .6rem;
+  }
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__social-link {
+  &:not(:last-child) {
+    margin-right: 1.2rem;
+  }
+}

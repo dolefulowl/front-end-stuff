@@ -1,0 +1,28 @@
+@import "reset";
+@import "_vars";
+@import "_mixin";
+@import "_helpers";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/* Blocks */
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/benefits';
+@import 'blocks/features';
+@import 'blocks/tehcnology';
+@import 'blocks/stay-focused';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/hamburger';

@@ -1,0 +1,32 @@
+@import "reset";
+@import "_vars";
+@import "_mixin";
+
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+
+  background-color: #fff;
+}
+
+@import "blocks/helpers";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/intro";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/benefit";
+@import "blocks/allyouneed";
+@import "blocks/drag-drop";
+@import "blocks/template";
+@import "blocks/pricing";
+@import "blocks/footer";
+
+
+

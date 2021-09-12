@@ -1,0 +1,48 @@
+.intro {
+  background: url("../img/intro/intro-back.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  padding-top: 7rem;
+}
+
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__title {
+  font-size: 5rem;
+  @include stroke(1, black);
+  color: $white;
+
+  margin-top: 11.8rem;
+  margin-bottom: 2.66rem;
+
+  @include breakpoint($mid) {
+    font-size: 4rem;
+  }
+  @include breakpoint($phone) {
+    font-size: 2.7rem;
+    margin-top: 5rem;
+  }
+}
+
+.intro__subtitle {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: $white;
+
+  text-align: center;
+
+  margin-bottom: 2.666rem;
+
+  @include breakpoint($phone) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}

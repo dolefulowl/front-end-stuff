@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  max-width: 1490px;
+
+  margin: 0 auto;
+  padding: 0 13px;
+
+  &--wide {
+    max-width: 1690px;
+  }
+}

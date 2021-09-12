@@ -1,0 +1,182 @@
+.template__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 123px;
+  position: relative;
+}
+
+.template__title {
+  font-size: 4rem;
+  font-weight: 100;
+  color: $primary;
+  text-align: center;
+
+  margin-bottom: 2.1rem;
+
+  @include breakpoint($md) {
+    font-size: 3.33rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.template__subtitle,
+.template__benefit-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $secondary;
+
+  @include breakpoint($pseudo-hide) {
+    text-align: center;
+  }
+}
+
+.template__subtitle {
+  width: 66.14rem;
+  text-align: center;
+  margin-bottom: 90px;
+
+  @include breakpoint($pseudo-hide) {
+    width: 100%;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1rem;
+  }
+}
+
+.template__benefit {
+  position: absolute;
+  width: 16.73rem;
+
+
+  &--left {
+    top: 349px;
+    left: 43px;
+
+    @include breakpoint($pseudo-hide) {
+      align-self: flex-start;
+      text-align: start;
+
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--right {
+    bottom: 185px;
+    right: 39px;
+    text-align: right;
+
+    @include breakpoint($pseudo-hide) {
+      align-self: flex-end;
+      text-align: end;
+    }
+
+    @include breakpoint($phone) {
+      margin-top: 2rem;
+    }
+  }
+
+  &--left,
+  &--right {
+    @include breakpoint($pseudo-hide) {
+      position: unset;
+    }
+  }
+
+  @include breakpoint($pseudo-hide) {
+    padding: 0 1rem;
+    width: 24rem;
+  }
+
+  @include breakpoint($phone) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.template__benefit-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $primary;
+
+  margin-bottom: 1.6rem;
+
+  @include breakpoint($pseudo-hide) {
+    margin-bottom: .5rem;
+  }
+}
+
+.template__benefit-underline {
+  top: 45px;
+
+  height: 2px;
+  width: 636px;
+  background-color:  #5584ff;
+
+  position: absolute;
+
+  &::after,
+  &::before {
+    content: '';
+
+    border-radius: 50%;
+    position: absolute;
+
+    @include breakpoint($pseudo-hide) {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: -8px;
+    right: 0;
+
+    height: 20px;
+    width: 20px;
+
+    background-color: #5584ff;
+  }
+
+  &::before {
+    top: -13px;
+    right: -5px;
+
+    height: 30px;
+    width: 30px;
+
+    background-color: rgba(85, 132, 255, 0.25);
+  }
+
+  &--right {
+    right: 0;
+
+    &::after {
+      top: -8px;
+      left: 0;
+    }
+
+    &::before {
+      top: -13px;
+      left: -5px;
+    }
+  }
+
+  @include breakpoint($pseudo-hide) {
+    width: 100%;
+    position: unset;
+
+    margin-bottom: 0.7rem;
+  }
+}
+
+.template__benefit-subtitle {
+  text-align: unset;
+}
+
+

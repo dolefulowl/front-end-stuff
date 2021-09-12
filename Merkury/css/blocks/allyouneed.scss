@@ -1,0 +1,104 @@
+.all-you-need {
+  position: relative;
+  margin-bottom:  18.46rem;
+
+  @include breakpoint($pseudo-hide) {
+    margin-bottom:   47.12rem;
+  }
+
+  @include breakpoint($md) {
+    margin-bottom:   7rem;
+  }
+}
+
+.all-you-need__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.all-you-need__content {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($md) {
+    align-items: center;
+  }
+}
+
+.all-you-need__title {
+  font-size: 4rem;
+  font-weight: 100;
+  color: $primary;
+  line-height: 1.1;
+
+  margin-bottom: 4rem;
+
+  @include breakpoint($md) {
+    font-size: 3.333rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.all-you-need__subtitle {
+  max-width: 39.06rem;
+  width: 100%;
+
+  margin-bottom: 4.4rem;
+
+  @include breakpoint($md) {
+    text-align: center;
+  }
+  @include breakpoint($sm) {
+    font-size: 1.111rem;
+  }
+}
+
+.all-you-need__benefit {
+  padding-left: 2.6666rem;
+  position: relative;
+  font-size: 1.46rem;
+  font-weight: 400;
+  color: #5584ff;
+
+  margin-bottom: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background: url('../img/allyouneed_icon.png');
+  }
+
+  @include breakpoint($sm) {
+    font-size: 1.1rem;
+  }
+}
+
+.all-you-need__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 66.6666rem;
+
+  @media (max-width: 1670px) {
+    max-width: 46.666rem;
+  }
+
+  @include breakpoint($pseudo-hide) {
+    top: 35rem;
+  }
+
+  @include breakpoint($md) {
+    display: none;
+  }
+}
+

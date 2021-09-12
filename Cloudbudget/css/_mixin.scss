@@ -1,0 +1,28 @@
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke*-1;
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+@mixin breakpoint ($br) {
+  @media (max-width: $br) {@content;}
+}
+
+@mixin buttonColor ($text-color, $bg-color) {
+  color: $text-color;
+  background-color: $bg-color;
+
+  &:hover {
+    color: $bg-color;
+    background-color:$text-color;
+  }
+}

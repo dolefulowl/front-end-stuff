@@ -1,0 +1,84 @@
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 7.8rem 0;
+
+  @include breakpoint($high) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact__label {
+  width: 45%;
+  max-width: 445px;
+
+  @include breakpoint($high) {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
+.contact__title {
+  font-size: 2.4rem;
+  color: $black;
+  font-weight: 700;
+
+  margin-bottom: 3.3333rem;
+}
+
+.contact__subtitle {
+  font-size: .9333rem;
+  color: $black;
+  font-weight: 400;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 36rem;
+}
+
+.contact__input,
+.contact__select {
+  padding: 1.134rem 0 1.134rem 2rem;
+  margin-bottom: 1.6rem;
+
+  font-size: 1.06rem;
+  border-radius: .6rem;
+  outline: none;
+  border: 1px gray solid;
+
+  &--name {
+    width: 46.9%;
+    @include breakpoint($mid) {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+    @include breakpoint($mid) {
+      margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.contact__select {
+  box-sizing: border-box;
+  font: inherit;
+  -webkit-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 14px;
+  cursor: pointer;
+  line-height: 1.2rem;
+  font-weight: 400;
+}

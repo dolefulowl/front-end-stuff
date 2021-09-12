@@ -1,0 +1,221 @@
+.drag-drop {
+  background: url('../img/drag_and_drop-bg.png') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 6.666rem;
+  padding: 10.666rem 0;
+  @include breakpoint($xl) {
+    padding: 10.666rem 0;
+  }
+}
+
+.drag-drop__inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1474px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.drag-drop__left {
+  display: flex;
+  @media (max-width: 1474px) {
+    margin-bottom: 10rem;
+  }
+  @include breakpoint($xl) {
+    display: none;
+  }
+}
+
+.drag-drop__blocks-column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: 3.2rem;
+  }
+}
+
+.drag-drop__blocks-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $white;
+  position: relative;
+
+  margin-bottom: 2.3rem;
+
+  &::before {
+    content: attr(data-count);
+    position: absolute;
+    left: 44%;
+
+    color: #8492af;
+    font-weight: 500;
+
+  }
+}
+
+.drag-drop__block {
+  width: 25.93rem;
+  height: 6.666rem;
+  background-color: $white;
+
+  margin-bottom: 0.866rem;
+  padding: 2rem;
+
+  &--ml {
+    margin-left: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+
+  &--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: unset;
+    border: 1px gray dashed;
+
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  &--hand {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -52px;
+      right: -43px;
+      height: 96px;
+      width: 96px;
+      background: url("../img/drag-drop__hand-gesture.png") no-repeat;
+      z-index: 1000;
+    }
+  }
+}
+
+.drag-drop__block__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drag-drop__block__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.drag-drop__avatar {
+  height: 41px;
+  width: 41px;
+  background-color: #5584ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $white;
+
+  border-radius: 50%;
+
+  margin-right: 1.533rem;
+}
+
+.drag-drop__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.drag-drop__time {
+  justify-self: flex-end;
+  font-size: .8666rem;
+  font-weight: 400;
+  color: #828284;
+  position: relative;
+  padding-left: 1.23rem;
+
+  &::before {
+    content: '';
+    height: 13px;
+    width: 13px;
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    background: url("../img/drag-drop__clock-icon.png");
+    background-size: contain;
+
+    }
+
+  &--completed {
+    color: rgba(0, 191, 27, 0.8);
+    &::before {
+      content: '';
+      height: 13px;
+      width: 13px;
+
+      position: absolute;
+      top: 3px;
+      left: 0;
+
+      background: url("../img/drag-drop__complete-icon.png");
+      background-size: contain;
+    }
+  }
+}
+
+.drag-drop__article {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0e1a35;
+}
+
+.drag-drop__block__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-drop__right {
+  width: 33.93rem;
+  padding-right: 1rem;
+
+  @media (max-width: 1474px) {
+    text-align: center;
+  }
+
+  @media (max-width: 557px) {
+    width: 100%;
+  }
+}
+
+.drag-drop__right-title {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: $white;
+
+  @include breakpoint($phone) {
+    font-size: 3.5rem;
+  }
+}
+
+.drag-drop__right-subtitle {
+  font-size: 1.2rem;
+  @include breakpoint($phone) {
+    font-size: 1rem;
+  }
+}

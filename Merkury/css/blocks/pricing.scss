@@ -1,0 +1,157 @@
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricing__title {
+  font-size: 4rem;
+  font-weight: 100;
+  color: $primary;
+
+  margin-bottom: 3.26rem;
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.pricing__plans {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 6.666rem;
+
+  @media (max-width: 1070px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.pricing__plan {
+  padding: 3rem 3.866rem;
+  max-width: 21.4rem;
+  width: 100%;
+  box-shadow: 0px 1px 12px 4px #d5d5d7;
+
+  @media (max-width: 1070px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.pricing__plan-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $primary;
+}
+
+.pricing__plan-price-blue {
+  font-size: 2.666rem;
+  font-weight: 700;
+  color: $primary;
+
+  &--big {
+    font-size: 4.8rem;
+  }
+}
+
+.pricing__plan-price-grey {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8492af;
+}
+
+.pricing__benefits {
+  padding: 0;
+}
+
+.pricing__benefit {
+  position: relative;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $secondary;
+  list-style-type: none;
+
+  margin-bottom: .86rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -26px;
+    height: 20px;
+    width: 20px;
+    background: url('../img/allyouneed_icon.png');
+    background-size: cover;
+  }
+
+  &--cross {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -26px;
+      height: 20px;
+      width: 20px;
+      background: url('../img/cross.png');
+      background-size: cover;
+    }
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1rem;
+  }
+}
+
+.pricing__subtitle {
+  width: 58.46rem;
+  align-self: center;
+
+  margin-bottom: 4.666rem;
+  @include breakpoint($xl) {
+    width: 100%;
+    margin-bottom: 2.666rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1rem;
+  }
+}
+
+.pricing__btn {
+  position: relative;
+
+  max-width: 13.333rem;
+  align-self: center;
+
+  margin-bottom: 7rem;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    height: 1px;
+    width: 214px;
+    background-color: #dadee7;
+    left: -252px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    height: 1px;
+    width: 214px;
+    background-color: #dadee7;
+    left: 252px;
+  }
+
+  &::after,
+  &::before {
+    @media (max-width: 770px) {
+      display: none;
+    }
+  }
+}

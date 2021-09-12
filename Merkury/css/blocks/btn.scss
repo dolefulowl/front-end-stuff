@@ -1,0 +1,42 @@
+.btn {
+  padding: .8rem 2.8rem;
+  border: 1px #233a72 solid;
+  border-radius: 3rem;
+
+  font-size: 1.2rem;
+  color: #5584ff;
+  text-decoration: none;
+
+  transition: background-color .2s ease;
+
+  &:hover {
+    background: #5584ff;
+    color: #ffffff;
+  }
+
+  &--join,
+  &--wide {
+    color: $primary;
+    border-color: $gray;
+    font-weight: 700;
+    &:hover {
+      border-color: unset;
+    }
+  }
+
+  &--join {
+    border-color: unset;
+    padding: 0.5rem 3.833rem;
+  }
+
+  &--wide {
+    padding: .7rem 4.833rem;
+    @include breakpoint($lg) {
+      padding: .7rem 2.833rem;
+    }
+  }
+
+  @include breakpoint($sm) {
+    font-size: 1rem;
+  }
+}

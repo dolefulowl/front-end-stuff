@@ -1,0 +1,28 @@
+.btn {
+  font-size: .933rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px $white solid;
+  color: $white;
+  padding: 0.73333rem 1.933rem;
+
+  transition: background-color .2s ease;
+
+  &:hover {
+    color: $primary;
+    background-color: white;
+  }
+
+  &--wide {
+    padding: 16px 52px;
+    font-weight: 600;
+  }
+
+  &--contact {
+    @include buttonColor($white, $primary);
+    &:hover {
+      border: 1px solid $black;
+    }
+
+  }
+}

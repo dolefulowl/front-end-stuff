@@ -1,0 +1,72 @@
+.intro {
+  padding-top: 13.33rem;
+  background: url("../img/intro-bg.png")center no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 17.2rem;
+
+  @include breakpoint($md) {
+    margin-bottom: 5.2rem;
+  }
+
+  @media (max-height: 640px) {
+    padding-top: 6.33rem;
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__title {
+  font-size: 4rem;
+  color: $white;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+
+  @include breakpoint($tablet) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint($md) {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 3rem;
+  }
+}
+
+.intro__subtitle {
+  text-align: center;
+  line-height: 1;
+  font-size: 2.4rem;
+  color: #8492af;
+
+  margin: 1rem 0 5.4rem;
+
+  @include breakpoint($tablet) {
+    font-size: 2rem;
+  }
+  
+  @include breakpoint($phone) {
+    font-size: 1.4rem;
+  }
+}
+
+.intro__photo {
+  width: 51.866rem;
+  position: absolute;
+  bottom: -7.4rem;
+  padding: 1.6rem;
+  @include breakpoint($md) {
+    display: none;
+  }
+}
