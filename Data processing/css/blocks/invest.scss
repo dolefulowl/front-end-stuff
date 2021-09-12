@@ -1,0 +1,181 @@
+.invest {
+  position: relative;
+
+  margin-bottom: 11.13rem;
+}
+
+.invest__back-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.invest__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint(890px) {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.invest__label {
+  width: 100%;
+  max-width: 470px;
+
+  @include breakpoint(890px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.invest__label-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.333rem;
+  color: $secondary;
+
+  margin-bottom: 2rem;
+
+  @include breakpoint($md) {
+    font-size: 2rem;
+    line-height: 2.333rem;
+  }
+}
+
+.invest__label-subtitle {
+  font-size: 1rem;
+  line-height: 1.8666rem;
+  letter-spacing: .0333rem;
+  color: $primary;
+
+  margin-bottom: 3.0666rem;
+}
+
+.invest__card {
+  box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+  border-radius: 10px;
+
+  width: 100%;
+  max-width: 17.3333rem;
+  background-color: white;
+  z-index: 1;
+
+  transform: translateX(-47%);
+
+  @include breakpoint(890px) {
+    transform: unset;
+  }
+}
+
+.invest__card-text {
+  padding: 1.333rem 2rem;
+  text-align: start;
+
+  position: relative;
+}
+
+.invest__card-title {
+  font-family: "Montserrat";
+  font-size: 1.0666rem;
+  color: #212B36;
+}
+
+.invest__card-subtitle,
+.invest__card-description {
+  font-family: "Open Sans";
+  font-size: .666rem;
+  letter-spacing: 0.033rem;
+  color: #637381;
+
+  margin-bottom: 1.466rem;
+}
+
+.invest__card-description {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  margin-bottom: 1.3333rem;
+}
+
+.invest__card-price {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #13C296;
+}
+
+.invest__card-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid #D6DBDF .03333rem;
+
+  padding-top: 1rem;
+}
+
+.details__title {
+  font-family: "Montserrat";
+  font-size: .9333rem;
+  font-weight: 700;
+  color: #212B36;
+}
+
+.details__subtitle {
+  font-size: 0.6666rem;
+  font-weight: 400;
+  color: #637381;
+}
+
+.invest__card-leftside {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  
+  background: #13C296;
+
+  position: absolute;
+  top: -60%;
+  right: 88%;
+
+  box-shadow: -11px 16px 25px rgba(19, 194, 150, 0.24);
+  border-radius: 6px;
+}
+
+.invest__card-rightside {
+  position: absolute;
+  top: 24.87%;
+  left: 100%;
+  background-color: #516EA9;
+  border-radius: 0 0.666rem 0.666rem 0;
+
+  padding: 1rem 2rem 1rem 1rem;
+
+  @include breakpoint($md) {
+    display: none;
+  }
+}
+
+.invest__card-rightside-title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.066rem;
+  line-height: 1.333rem;
+  color: #fff;
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+.invest__card-rightside-subtitle {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 0.666rem;
+  line-height: 0.908rem;
+  color: #fff;
+}
+
+
+
