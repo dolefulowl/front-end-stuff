@@ -3,6 +3,7 @@
   text-align: center;
   width: 100%;
   z-index: 1000;
+  position: relative;
 
   @include breakpoint($xl) {
     padding: 3.8rem 0;
