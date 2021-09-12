@@ -1,0 +1,96 @@
+.email {
+  background: url("../img/email/email-background.png");
+
+  margin-bottom: 12.333rem;
+
+  @include breakpoint(450px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.email__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(28 27 79);
+  border-radius: 0.333rem;
+  text-align: center;
+
+  padding: 3.333rem 2rem;
+
+  z-index: 1;
+}
+
+.email__title {
+  font-size: 2.4rem;
+  line-height: 2.866rem;
+  font-weight: 600;
+  color: $orange;
+  text-align: center;
+
+  margin-bottom: 1.3333rem;
+
+  @include breakpoint(410px) {
+    line-height: 2.4rem;
+  }
+}
+
+.email_subtitle {
+  font-size: 1.06rem;
+  line-height: 1.46rem;
+  font-weight: 400;
+  text-align: center;
+  color: #95A1BB;
+
+  width: 100%;
+  max-width: 26.4rem;
+
+  margin-bottom: 1.5333rem;
+}
+
+.email__form {
+  margin-bottom: 1rem;
+  color: #fff;
+
+  @include breakpoint(410px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.email__input {
+  font-family: inherit;
+  font-size: .9333rem;
+  color: #fff;
+  outline: none;
+
+  width: 100%;
+  max-width: 13.86666rem;
+
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: rgb(246 246 246 / 7%);
+
+  padding: 14px 27px 13.2px 1rem;
+  margin-right: -0.333rem;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.22);
+  }
+
+  &:focus{
+    color: #fff;
+  }
+  @include breakpoint(410px) {
+    margin-right: 0;
+  }
+
+}
+
+.email__description {
+  font-size: 0.933rem;
+  line-height: 1.333rem;
+  font-weight: 400;
+  color: $primary;
+}
+
