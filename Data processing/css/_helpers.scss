@@ -12,10 +12,11 @@
   display: block !important;
 }
 
-.fixed {
-  position: fixed;
+.fixed  {
+  position: fixed !important;
   background: linear-gradient(180deg, #391d5f 100%, #712222 45%, #FFFFFF 100%);
   padding: 1.8rem 0 !important;
+  margin: 0 !important;
 
   @include breakpoint($md) {
     padding: 1rem 0 !important;
