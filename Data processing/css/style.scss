@@ -1,0 +1,31 @@
+@import "reset";
+@import "_vars";
+@import "_mixin";
+@import "_helpers";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Khula', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+}
+
+
+/* Blocks */
+@import 'blocks/header';
+@import 'blocks/container';
+@import 'blocks/nav';
+@import 'blocks/btn';
+@import 'blocks/intro';
+@import 'blocks/your-choice';
+@import 'blocks/increase';
+@import 'blocks/simple-ways';
+@import 'blocks/next-project';
+@import 'blocks/invest';
+@import 'blocks/finding-info';
+@import 'blocks/email';
+@import 'blocks/footer';
